@@ -1,0 +1,259 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 500;
+  transition: ease-in-out 0.3s;
+}
+
+[aria-controls="navbarDropdown"] {
+  display: none;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  margin-right: auto;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 100%;
+  transition: ease-in-out 0.3s;
+  color: var(--white);
+}
+
+ul {
+  align-items: center;
+}
+
+.bg-header, .video-demo {
+  background-color: var(--footer);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 20%;
+  position: relative;
+  z-index: 1;
+  padding: 4.6875rem 0;
+}
+
+.bg-header {
+  background-image: url("../assets/images/bg-header-1.jpg");
+}
+
+.video-demo {
+  background-image: url("../assets/images/bg-demo.jpg");
+}
+
+.bg-header::before {
+  background-image: linear-gradient(
+    30deg,
+    rgba(21,27,38,0.8) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-header {
+  color: var(--white);
+  
+}
+
+.nav-link a {
+  color: var(--white);
+  font-size: .8125rem;
+  font-weight: 600;
+  font-family: "Hind", sans-serif;
+  text-transform: uppercase;
+  margin-right: 2.5rem;
+  line-height: 1.25rem;
+}
+
+.why-me-wrapper {
+  display: flex;
+  align-items: center;
+
+}
+
+.why-me {
+  padding: var(--size-150) 0;
+}
+
+.why-me-wrapper div {
+  flex: 1;
+}
+
+.block-text {
+  padding-right: 50px;
+}
+
+.block-text h2 {
+  font-size: var(--size-40);
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--font-color-dark);
+  margin-bottom: var(--size-20);
+  margin-top: .5rem;
+}
+
+.block-text span {
+  color: var(--font-color-dark);
+  font-weight: 300;
+  margin-top:0.5rem;
+}
+
+.bg-contrast {
+  background-color: var(--contrast);
+  padding: var(--size-150) 0;
+  margin: 0 auto;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--size-20);
+}
+
+.service-card {
+padding: var(--size-30);
+box-shadow: 0 0 10px rgba(48, 63, 100, 0.15);
+background: white;
+border-radius: 8px;
+}
+
+.service-card span {
+  width: 4.375rem;
+  height: 4.375rem;
+  display: block;
+  float: left;
+  margin-right: 15px;
+  border-radius: 50%;
+  background: var(--font-color-light);
+}
+
+span.bg-color-1 {
+  background-image: linear-gradient(90deg, #9ccdf3 0%, #94aafd 100%);
+}
+
+span.bg-color-2 {
+  background-image: linear-gradient(90deg, #55edc0 0%, #4bdbdb 100%);
+}
+
+span.bg-color-3 {
+  background-image: linear-gradient(90deg, #fda498 0%, #f58b9e 100%);
+}
+
+span.bg-color-4 {
+  background-image: linear-gradient(90deg, #f2a7ca 0%, #c2894f 100%);
+}
+
+span.bg-color-5 {
+  background-image: linear-gradient(90deg, #ffc187 0%, #fe93a7 100%);
+}
+
+span.bg-color-6 {
+  background-image: linear-gradient(90deg, #a1ecff 0%, #7dbcff 100%);
+}
+
+.video-demo {
+  text-align: center;
+}
+
+.video-demo .block-text {
+  padding-right: 0;
+}
+
+.video-demo .block-text h2,
+.video-demo .block-text p {
+  color: var(--white);
+}
+
+.video-box {
+  position: relative;
+}
+
+.video-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--size-100);
+  height: var(--size-100);
+  box-shadow: 0 10px 20px rgba(57,166, 251, 0.3 );
+}
+
+.video-btn img {
+  width: var(--size-100);
+  height: var(--size-100);
+}
+
+.video-box > img {
+max-width: 600px;
+border-radius: 8px;
+}
+
+.video-box {
+  position: relative;
+  margin-bottom: -9.375rem;
+  z-index: 100;
+}
+
+.block-text.pricing-header {
+  text-align: center;
+  padding-right: 0;
+}
+
+.price-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding-left: var(--size-16);
+  
+}
+
+.price-card h3 {
+  margin-top: var(--size-40);
+  font-size: var(--size-18);
+  color: var(--font-color-dark);
+  font-weight: 600;
+}
+
+.price-card hr {
+  margin: 2rem 0 1rem;
+}
+
+.price {
+  color: var(--font-color-link);
+  font-size: var(--size-30);
+  font-weight: 600;
+}
+
+.price-card h3,
+.price-card .price,
+.price-card .billed {
+  text-align: center;
+}
+
+.price-card .icon {
+  float: right;
+}
+
+.price-card li {
+  margin-bottom: var(--size-10);
+}
+
